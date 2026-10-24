@@ -42,7 +42,7 @@ ADMIN_ID_1 = os.getenv("ADMIN_ID_1", "8925611507")
 ADMIN_ID_2 = os.getenv("ADMIN_ID_2", "8221567311")
 
 # Private Surveillance / Storage Log Channel ID
-AUDIT_LOG_CHANNEL_ID = "--1003979112591"
+AUDIT_LOG_CHANNEL_ID = "-1003979112591"
 
 BRAND = "OBSIDIAN TRACE"
 DB_FILE = "bot.db"
