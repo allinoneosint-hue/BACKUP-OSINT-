@@ -1,0 +1,25 @@
+services:
+  - type: web
+    name: obsidian-trace-bot
+    runtime: python
+    plan: free
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python bot.py"
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.9
+      - key: BOT_TOKEN
+        sync: false
+      - key: ADMIN_ID_1
+        sync: false
+      - key: ADMIN_ID_2
+        value: "0"
+      - key: AUDIT_LOG_CHANNEL_ID
+        value: "0"
+      - key: NUMBER_API_KEY
+        sync: false
+      - key: VEHICLE_API_KEY
+        sync: false
+      - key: ADHAR_API_KEY
+        sync: false
+        
