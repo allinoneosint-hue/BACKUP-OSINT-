@@ -1451,7 +1451,7 @@ async def tg_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
         return
 
     val = context.args[0].strip()
-    if not re.fullmatch(r"\\d{5,15}", val):
+    if not re.fullmatch(r"[0-9]{5,15}", val):
         await update.message.reply_text(
             "❌ <b>Invalid ID:</b> Only numeric Telegram IDs allowed.",
             parse_mode=ParseMode.HTML,
